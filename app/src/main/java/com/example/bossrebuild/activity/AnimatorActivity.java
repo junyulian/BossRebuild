@@ -27,7 +27,7 @@ public class AnimatorActivity extends BaseActivity<ActivityAnimatorBinding> {
         binding.btnRotate.setOnClickListener(v -> rotate(binding.view));
         binding.btnAlpha.setOnClickListener(v -> alpha(binding.view));
         binding.btnGroup.setOnClickListener(v -> group(binding.view));
-        binding.btnSin.setOnClickListener(v -> sinMove(binding.view));
+        binding.btnSin.setOnClickListener(v -> sinMove());
     }
 
     @Override
@@ -36,20 +36,8 @@ public class AnimatorActivity extends BaseActivity<ActivityAnimatorBinding> {
     }
 
 
-    private void sinMove(View view){
-        Point startP = new Point((int)view.getX(), (int)view.getY());//初始值（起点）
-        Point endP = new Point(view.getWidth() , view.getHeight());//结束值（终点）
-        final ValueAnimator valueAnimator = ValueAnimator.ofObject(new PointSinEvaluator(), startP, endP);
-        valueAnimator.setRepeatCount(-1);
-        valueAnimator.setRepeatMode(ValueAnimator.REVERSE);
-        valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-            @Override
-            public void onAnimationUpdate(ValueAnimator animation) {
-                //currentPoint = (Point) animation.getAnimatedValue();
-                view.postInvalidate();
-            }
-        });
-        valueAnimator.start();
+    private void sinMove(){
+       binding.pnv.startAnimation();
     }
 
 
