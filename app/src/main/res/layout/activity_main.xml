@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        tools:context=".activity.MainActivity">
+
+
+        <TextView
+            android:id="@+id/tv_flow"
+            android:layout_width="68dp"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:background="#ddd"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:text="flow"/>
+
+        <TextView
+            android:id="@+id/tv_dialog"
+            android:layout_width="68dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="#ddd"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:text="dialog"/>
+
+        <TextView
+            android:id="@+id/tv_live_data"
+            android:layout_width="68dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="#ddd"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:text="liveData"/>
+
+        <TextView
+            android:id="@+id/tv_play"
+            android:layout_width="68dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="#ddd"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:text="video"/>
+
+        <TextView
+            android:id="@+id/tv_img"
+            android:layout_width="68dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="#ddd"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:text="photo"/>
+
+        <TextView
+            android:id="@+id/tv_animator"
+            android:layout_width="68dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="#ddd"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:text="属性动画"/>
+
+    </LinearLayout>
+
+</layout>

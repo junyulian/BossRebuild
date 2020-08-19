@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.example.bossrebuild.widge.ScrollPhoto
+            android:id="@+id/iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_shown"
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+
+            <com.example.bossrebuild.widge.DragFrameLayout
+                android:id="@+id/fl_mask"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="50dp">
+
+
+            </com.example.bossrebuild.widge.DragFrameLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_shown"
+            android:orientation="vertical"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/tv_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:text="截图展示"/>
+            <ImageView
+                android:id="@+id/iv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@null"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</layout>
