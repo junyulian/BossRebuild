@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/main_area"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#FFCCAA"/>
+    <ImageView
+        android:id="@+id/iv_v_drag"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/main_area"
+        android:layout_marginTop="-10dp"
+        android:src="@mipmap/drag_icon"/>
+    <Button
+        android:id="@+id/btn_idy"
+        android:layout_width="75dp"
+        android:layout_height="28dp"
+        android:layout_below="@id/main_area"
+        android:background="@drawable/bg_eb5b02_5radius"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:text="识别"/>
+
+
+</RelativeLayout>

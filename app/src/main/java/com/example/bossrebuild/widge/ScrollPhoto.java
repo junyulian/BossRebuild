@@ -5,17 +5,9 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
-import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.view.MotionEvent;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
-
-import com.example.bossrebuild.R;
-import com.example.bossrebuild.util.LogUtils;
 
 /**
  * @Description: java类作用
@@ -97,12 +89,10 @@ public class ScrollPhoto extends androidx.appcompat.widget.AppCompatImageView {
                 float endY = event.getY();
                 float moveY = endY - startY;
 
-
                 translationY = translationY + moveY;
                 startY = endY;
                 invalidate();
                 break;
-
         }
 
         return true;

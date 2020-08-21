@@ -37,6 +37,8 @@
 
         <activity android:name=".activity.PhotoImgActivity"/>
         <activity android:name=".activity.AnimatorActivity"/>
+        <activity android:name=".activity.MoveAbleActivity"/>
+        <activity android:name=".activity.IdentifyActivity"/>
     </application>
 
 </manifest>

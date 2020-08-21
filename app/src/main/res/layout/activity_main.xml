@@ -82,6 +82,28 @@
             android:textSize="14sp"
             android:text="属性动画"/>
 
+        <TextView
+            android:id="@+id/tv_move"
+            android:layout_width="68dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="#ddd"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:text="可移动的控件"/>
+
+        <TextView
+            android:id="@+id/tv_identify"
+            android:layout_width="68dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="#ddd"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:text="识别控件"/>
+
     </LinearLayout>
 
 </layout>

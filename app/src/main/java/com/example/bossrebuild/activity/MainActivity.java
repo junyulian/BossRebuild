@@ -29,8 +29,8 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
         binding.tvPlay.setOnClickListener(v->startActivity(VideoActivity.class));
         binding.tvImg.setOnClickListener(v->startActivity(PhotoImgActivity.class));
         binding.tvAnimator.setOnClickListener(v -> startActivity(AnimatorActivity.class));
-
-
+        binding.tvMove.setOnClickListener(v -> startActivity(MoveAbleActivity.class));
+        binding.tvIdentify.setOnClickListener(v -> startActivity(IdentifyActivity.class));
 
 
     }
